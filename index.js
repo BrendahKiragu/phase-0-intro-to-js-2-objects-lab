@@ -22,6 +22,15 @@ function destructivelyUpdateEmployeeWithKeyAndValue (employee, key, value){
   return employee;
 }
 
+//test4: creates a clone of original object(employee)
+//deletes the key['name']
+//returns the cloned copy without destroying the original object.
+function deleteFromEmployeeByKey(employee, key){
+  const newEmployeeList = {...employee}
+  delete newEmployeeList['name']
+  return newEmployeeList;
+}
 
-console.log(employees)
+
+console.log(newEmployee)
 console.log(employee)
