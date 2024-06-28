@@ -31,6 +31,10 @@ function deleteFromEmployeeByKey(employee, key){
   return newEmployeeList;
 }
 
+function destructivelyDeleteFromEmployeeByKey (employee, key){
+  delete employee["name"]
+  return employee;
+}
 
 console.log(newEmployee)
 console.log(employee)
