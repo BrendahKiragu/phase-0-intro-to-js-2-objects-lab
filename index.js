@@ -12,10 +12,9 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
 
   return newObject;
 }
-console.log(updateEmployeeWithKeyAndValue())
 
 //test 2: return a clone of original object with new value in the streetAddress key
-const employees = updateEmployeeWithKeyAndValue (employee, "streetAddress", "11 Broadway");
+const updatedEmployee = updateEmployeeWithKeyAndValue (employee, "streetAddress", "20 Broadway");
 
 //test 3: creates  a function that allows mutability of original object(employee)
 function destructivelyUpdateEmployeeWithKeyAndValue (employee, key, value){
@@ -32,6 +31,7 @@ function deleteFromEmployeeByKey(employee, key){
   return newEmployeeList;
 }
 
+// Test 5: destructively delete from employee by key
 function destructivelyDeleteFromEmployeeByKey (employee, key){
   delete employee[key]
   return employee;
