@@ -1,7 +1,7 @@
-// Write your solution in this file!
+// creates an object
 const employee = {
   name: 'Sam',
-  streetAddress: '12 Seattle',
+  streetAddress: '11 Broadway',
 }
 
 //test 1: creates a function. create a copy of employee that you will use to carry the tests.
@@ -12,6 +12,7 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
 
   return newObject;
 }
+console.log(updateEmployeeWithKeyAndValue())
 
 //test 2: return a clone of original object with new value in the streetAddress key
 const employees = updateEmployeeWithKeyAndValue (employee, "streetAddress", "11 Broadway");
@@ -35,6 +36,3 @@ function destructivelyDeleteFromEmployeeByKey (employee, key){
   delete employee["name"]
   return employee;
 }
-
-console.log(newEmployee)
-console.log(employee)
